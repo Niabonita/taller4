@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <title>Ejemplo Formulario #1</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Your details </legend>
+            <ol>
+                <li>
+                    Name &nbsp;<input type="text" placeholder="First and last name" pattern="[A-Za-z ]*" >
+                </li>
+                <li>
+                    Email &nbsp;<input type="text" minlength= "1" maxlength="30" placeholder="example@domain.com">
+                </li>
+                <li>
+                    Phone &nbsp;<input type="number" placeholder="Eg. +447500000000">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery address</legend>
+            <ol>
+                <li>Address &nbsp; 
+                    <textarea cols="16" rows="4">
+                    </textarea>
+                </li>
+                <li>Post code 
+                    <input type="text" pattern="[0-9]{6,8}">
+                </li>
+                <li>Country &nbsp;
+                    <input type="text"> 
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <ol>
+                            <li> 
+                                <input type="radio" name="Card">VISA
+                            </li>
+                            <li>
+                                <input type="radio" name="Card">AmEx
+                            </li>
+                            <li>
+                                <input type="radio" name="Card">Mastercard
+                            </li>
+                        </ol>
+                    </fieldset>
+                </li>
+                <li>Card number &nbsp;
+                    <input type="text" pattern="[0-9]{1,3}">
+                </li>
+                <li>Security code&nbsp;
+                    <input type="text" pattern="(R)[0-9]*" minlength="2">
+                </li>
+                <li>Name on card&nbsp;
+                    <input type="text" placeholder="Exact name as on the card">
+
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Buy it!">
+        </fieldset>
+    </form>
+</body>
+</html>

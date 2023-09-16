@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <title>Ejemplo Formulario #2</title>
+
+</head>
+<body>
+    <form action="">
+        <center> 
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <h1 style="color: brown;"> 
+                                <img src="https://img.freepik.com/vector-premium/joven-empresaria-trabajando-ilustracion-dibujos-animados-computadora-portatil_56104-525.jpg?w=360" alt="img niña ejecutiva, xd" width="80" height="70"> Employee Registration Form
+                            </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" 
+                        style="text-align: center;">
+                            <input type="radio" name="xd">Mr. 
+                            <input type="radio" name="xd">Mrs.
+                            <input type="radio" name="xd">Ms.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            First Name
+                        </td>
+                        <td>
+                            
+                            <input type="text" placeholder="First Name" pattern="(Mr|Ms|Mrs) [A-Za-z]+( [A-Za-z]+){1,3}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Last Name"
+                           pattern="(Mr|Ms|Mrs) [A-Za-z]+( +[A-Za-z]+){1,2}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mail
+                        </td>
+                        <td>
+                            <input type="email"  pattern=".+@cecar\.edu\.co" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address
+                        </td>
+                        <td>
+                            <input type="text" maxlength="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">Select an option</option>
+                                <option value="">Seúl</option>
+                                <option value="">Busan</option>
+                                <option value="">Incheon</option>
+                                <option value="">Jeju</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Zip
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Upload Photo
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+            </table>
+        </center>
+        
+        
+    </form>
+</body>
+</html>
